@@ -72,7 +72,7 @@ public enum PresetFixedRatioType {
     /** When choose alwaysUsingOnePresetFixedRatio, fixed-ratio setting button does not show.
      */
     case alwaysUsingOnePresetFixedRatio(ratio: Double)
-    case canUseMultiplePresetFixedRatio(defaultRatio: Double = 0)
+    case canUseMultiplePresetFixedRatio(defaultRatio: Double = 0, ratioLockEnabled: Bool = true)
 }
 
 public enum CropVisualEffectType {

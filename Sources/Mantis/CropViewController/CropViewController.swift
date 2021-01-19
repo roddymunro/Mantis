@@ -110,10 +110,10 @@ public class CropViewController: UIViewController {
             case .alwaysUsingOnePresetFixedRatio(let ratio):
                 config.cropToolbarConfig.includeFixedRatioSettingButton = false
                 setFixedRatio(ratio)
-            case .canUseMultiplePresetFixedRatio(let defaultRatio):
+            case .canUseMultiplePresetFixedRatio(let defaultRatio, let ratioLockEnabled):
                 if (defaultRatio > 0) {
                     setFixedRatio(defaultRatio)
-                    cropView.aspectRatioLockEnabled = true
+                    cropView.aspectRatioLockEnabled = ratioLockEnabled
                     config.cropToolbarConfig.presetRatiosButtonSelected = true
                 }
                 
